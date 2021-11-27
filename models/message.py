@@ -7,7 +7,7 @@ import datetime
 
 messages = Table(
   'messages', meta,
-  Column('uuid', String(255), primary_key=True, default=uuid.uuid4()),
+  Column('uuid', String(255), primary_key=True, default=lambda: str(uuid.uuid4())),
   Column('senderPhone', String(255)),
   Column('receiverPhone', String(255)),
   Column('messageText', String(255)),
