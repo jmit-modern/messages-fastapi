@@ -19,6 +19,7 @@ pip install -r requirements.txt
 Use `uvicorn` to run the server locally.
 
 ```
+pip install uvicorn
 uvicorn index:app --reload
 ```
 
